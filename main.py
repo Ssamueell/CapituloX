@@ -8,6 +8,8 @@ from dotenv import load_dotenv
 import streamlit as st                
 load_dotenv()
 os.environ["LANGSMITH_TRACING"] = "true"
+os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
+os.environ["LANGCHAIN_PROJECT"] = "CapituloX"
 
 # Main application function
 def main():
